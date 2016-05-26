@@ -23,3 +23,6 @@ on website load.
 - Users can type chat messages to the chat room.
 - A notification is sent to all users when a user joins or leaves
 the chatroom.
+
+
+Around the World is an applicatio built using a MEAN stack. When a user accesses the application google maps grabs their location and pulls all sorts of data from various APIs about where they currently are. It also allows a user to view these datum in a large city almost exactly on the opposite side of the planet.
