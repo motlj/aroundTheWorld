@@ -1,0 +1,29 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+
+var worldlyObj = {
+  tweets : []
+};
+
+
+function tweets(locale) {
+ return $.ajax({
+   type: 'GET',
+   datatype: 'json',
+   headers: {
+     authorization: 'OAuth oauth_consumer_key="trR3lmHQz66Vqdehjxefp6ETk",oauth_token="734879068554825730-OjbgH0awp9fdaomwpIaaqUkG5fOeN10",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1464050055",oauth_nonce="kVzWWZ",oauth_version="1.0",oauth_signature="v5COC0rraDiTXypeUTvC%2BjlQ7rI%3D",Access-Control-Allow-Origin="https://api.twitter.com/1.1/search/tweets.json"'
+   },
+   url: 'https://api.twitter.com/1.1/search/tweets.json?q=' + locale,
+   success : function (response) {
+     $.each(response.statuses, function(index, status){
+      worldlyObj.tweets.push(status.text);
+     })
+   }
+ });
+}
+ 
+$(document).ready(function(){
+  tweets("milwaukee");
+});
+
+ </script>

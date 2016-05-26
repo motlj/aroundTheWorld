@@ -1,0 +1,117 @@
+<!doctype html>
+<html id="windowScrollBar" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Around the World</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="row"><center>
+    <h3 id="title">Let's take a trip</h3>
+    <p id="ATW">Around the World</p>
+    <br>
+    <form action="otherSide.html">
+      <button id="otherSide" type="submit">Let's Go!</button>
+    </form>
+    <br>
+  </center></div>
+  <div class="row">
+    <div class="col-lg-1 col-md-1 col-sm-1">
+    </div>
+    <div class="col-lg-10 col-md-10 col-sm-10">
+      <!-- <form method="GET" action="customLocation.html">
+        <input id="pac-input" name="location" class="controls" type="text" placeholder="Where are you?">
+        <button id="customLocation" type="submit">Let's Go</button>
+      </form> -->
+      <div id="map">
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1">
+    </div>
+  </div>
+
+
+  <div><center>
+    <p id="whereInTheWorld"></p>
+  </center></div>
+
+  <div class="weatherGreen row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Local Weather</h2>
+      <p id="currentLocationWeather"></p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </div>
+  </center><hr>
+  <div class="twitterBlue row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Live Local Twitter Feed</h2>
+      <div class="scrollBox" id="scrollBar">
+        <p id="tweets"></p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div>
+  <hr>
+  <div class="row ticketYellow"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Local Events</h2>
+      <p id="currentLocationEvents"></p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div>
+  <hr>
+  <div class="trailBrown row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Local Hiking &amp; Biking Trails</h2>
+      <p id="trails"></p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div>
+  <hr>
+  <div class="musicRed row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Music Related to This City</h2>
+      <p id="songs"></p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div>
+  <hr>
+  <div class="bookPink row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Find a Book About this City</h2>
+        <p id="books"></p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAmvTK3dg5VbyqO1iwrbOKR0xSwhc4liqs&libraries=places&callback=initMap"
+        async defer></script>
+  <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- <script src="/xmlParse.js"></script> -->
+  <!--<script src="/api.js"></script> --> 
+  <script src="/main.js"></script>
+</body>
+</html>

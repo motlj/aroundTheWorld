@@ -1,0 +1,169 @@
+<!doctype html>
+<html id="windowScrollBar" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Around the World</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="row"><center>
+    <h3 id="title">You've now gone</h3>
+    <p id="ATW">Around the World</p>
+    <br>
+    <form action="index.html">
+      <button id="home" type="submit">Take me Home</button>
+    </form>
+    <br>
+  </center></div>
+  <div class="row">
+    <div class="col-lg-1 col-md-1 col-sm-1">
+    </div>
+    <div class="col-lg-10 col-md-10 col-sm-10">
+<!--       <form method="GET" action="customLocation.html">
+        <input id="pac-input" name="location" class="controls" type="text" placeholder="Where are you?">
+        <button id="customLocation" type="submit">Let's Go</button>
+      </form> -->
+      <div id="map">
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1">
+    </div>
+  </div>
+
+
+  <div><center>
+    <p id="whereInTheWorld"></p>
+  </center></div>
+
+  <div class="weatherGreen row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Local Weather</h2>
+      <p id="currentLocationWeather"></p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </div>
+  </center><hr>
+  <div class="twitterBlue row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Live Local Twitter Feed</h2>
+      <div class="scrollBox" id="scrollBar">
+        <p id="tweets"></p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div>
+  <hr>
+  <div class="row ticketYellow"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Local Attractions</h2>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><strong>Urumqi Zoo</strong></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img title="Urumqi Zoo" alt="Urumqi Zoo" src="zoo.jpg">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <p>During a visit to Urumqi a visit to the zoo is a must. The place is an a attraction for children as well elders when traveling together. Urmuqi zoo is a great place for goups.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><strong>People's Theater of Xinjiang Uygur</strong></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img title="People's Theater of Xinjiang Uygur" alt="People's Theater of Xinjiang Uygur" src="theater.jpg">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <p>Relic of the Soviet days, this wonderful multiplex cinema has recently been renovated. You enter the main hall where massive chandeliers drip from the ceiling. There are a whole range of halls from the massive main one to a whole variety of little bijou halls.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div>
+  <hr>
+  <div class="trailBrown row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Local Hiking &amp; Biking Trails</h2>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><strong>Tianshan Mountains</strong> in Urumqi</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img title="Tianshan Mountains" alt="Tianshan Mountains" src="mountains.jpg">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <p>Located just 60 km or so from Urumqi, it's the most accessible piece of nature from the city. You can take a tourist bus and visit the grand canyon (the attendant also sings some karaoke for you. Breathtaking views of the mountains and a spectacular lake.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><strong>Red Hill</strong> in Urumqi</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img title="Red Hill" alt="Red Hill" src="redHill.jpg">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <p>The RED HILL Park is centrally located and easily reached by public transports. It is near the SOUTHERN AIRLINES PEARL HOTEL. Many shops and restaurants around the Park. It is a good and quite tiring climb to the top; whereby one gets a good view of the surroundings</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div>
+  <hr>
+ <!--  <div class="musicRed row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Music Related to This City</h2>
+      <p id="songs"></p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div> -->
+  <hr>
+  <div class="bookPink row"><center>
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h2>Find a Book About this City</h2>
+        <p id="books"></p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+  </center></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAmvTK3dg5VbyqO1iwrbOKR0xSwhc4liqs&libraries=places&callback=initMap2"
+        async defer></script>
+  <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- <script src="/xmlParse.js"></script> -->
+  <!--<script src="/api.js"></script> --> 
+  <script src="/main2.js"></script>
+</body>
+</html>

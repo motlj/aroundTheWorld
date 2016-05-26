@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Around the World</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3">
+      <ul class="pages">
+        <li class="chat page">
+          <div class="chatArea">
+            <ul class="messages"></ul>
+          </div>
+          <input class="inputMessage" placeholder="Type here..."/>
+        </li>
+        <li class="login page">
+          <div class="form">
+            <h3 class="title">What's your nickname?</h3>
+            <input class="usernameInput" type="text" maxlength="14" />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <h3><center>Welcome to the other side of the world</center></h3>
+        </div>
+<!--         <div class="col-lg-6 col-md-6 col-sm-6">
+          <form action="otherSide.html">
+            <button id="goAround" type="submit">Let's Go!</button>
+          </form>
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10">
+          <div id="map">
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <p id="whereInTheWorld"></p>
+  </div>
+
+  
+
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAmvTK3dg5VbyqO1iwrbOKR0xSwhc4liqs&libraries=places&callback=initMap2"
+        async defer></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/xmlParse.js"></script>
+  <script src="/destinationMap.js"></script>  
+  <script src="/main.js"></script>
+</body>
+</html>
